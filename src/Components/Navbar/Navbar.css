@@ -1,0 +1,9 @@
+.nav_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Navbar_comp img{
+    width: 80px;
+}

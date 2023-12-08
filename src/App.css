@@ -1,0 +1,44 @@
+iframe#webpack-dev-server-client-overlay {
+    display: none !important
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #800080;
+    border-radius: 1rem;
+}
+
+.container_fl {
+    background-color: inherit;
+    height: 100%;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: #f0f4f7!important;
+}
+
+
+.back_top {
+    background-color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    position: fixed;
+    bottom: 6rem;
+    right: 1.5rem;
+    z-index: 999999 !important;
+    color: #800080;
+}
+
+.back_top * {
+    font-size: 2.5rem !important;
+}

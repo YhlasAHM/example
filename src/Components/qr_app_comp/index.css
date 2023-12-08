@@ -1,0 +1,13 @@
+.Qr_app img{
+    width: 80px;
+}
+
+.Qr_app .second_img img{
+    width: 200px;
+}
+
+.Qr_app{
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+}
