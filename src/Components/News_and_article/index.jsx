@@ -6,7 +6,7 @@ import Cardd from '../comp_card'
 const News_and_article = () => {
     return (
         <div className='News_and_article mt-3'>
-            <div className='row row-cols-1 row-cols-md-2 g-3'>
+            <div className='row row-cols-1 row-cols-lg-2 g-3'>
                 <div className='col'>
                     <h4>TAZELIKLERIMIZ</h4>
                     <div className="row g-3">
