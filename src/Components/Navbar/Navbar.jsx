@@ -8,7 +8,7 @@ import logo from '../../Images/logo.png'
 import image from '../../Images/yasuly.jpg'
 
 import image_one from '../../Images/shygar.png'
-
+ 
 const Navbar = () => {
     return (
         <div className='Navbar_comp mt-1'>

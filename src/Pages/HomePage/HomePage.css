@@ -1,0 +1,8 @@
+.image-container, .image-container_one {
+    height: 30rem;
+    position: relative;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+}
