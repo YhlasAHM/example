@@ -37,7 +37,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
-.panolens-container {
+ 
+.panolens-container:not(:first-child) {
   display: none !important;
-}
+} 
