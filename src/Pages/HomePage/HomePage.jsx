@@ -27,6 +27,7 @@ const HomePage = () => {
                                 yaw={180}
                                 hfov={110}
                                 autoLoad
+                                autoRotate={-10}
                             >
                             </Pannellum>
                         </div>
@@ -39,6 +40,7 @@ const HomePage = () => {
                                 yaw={180}
                                 hfov={110}
                                 autoLoad
+                                autoRotate={-10}
                             >
                             </Pannellum>
                         </div>
@@ -55,6 +57,7 @@ const HomePage = () => {
                                         yaw={180}
                                         hfov={110}
                                         autoLoad
+                                        autoRotate={-10}
                                     >
                                     </Pannellum>
                                 </div>
@@ -79,6 +82,8 @@ const HomePage = () => {
                                         maxHfov={150}
                                         hotSpotDebug
                                         mouseZoom={false}
+                                        controls
+                                        autoRotate={-10}
                                     >
                                     </PannellumVideo>
                                 </div>
@@ -103,6 +108,8 @@ const HomePage = () => {
                                         maxHfov={150}
                                         hotSpotDebug
                                         mouseZoom={false}
+                                        controls
+                                        autoRotate={-10}
                                     >
                                     </PannellumVideo>
                                 </div>
@@ -127,6 +134,8 @@ const HomePage = () => {
                                         maxHfov={150}
                                         hotSpotDebug
                                         mouseZoom={false}
+                                        controls
+                                        autoRotate={-10}
                                     >
                                     </PannellumVideo>
                                 </div>
