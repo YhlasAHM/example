@@ -38,6 +38,3 @@ body {
   margin-right: auto;
 }
  
-.panolens-container:not(:first-child) {
-  display: none !important;
-} 

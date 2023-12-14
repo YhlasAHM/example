@@ -1,48 +1,23 @@
-import React, { useEffect, useState } from 'react'
-import './App.css';
+import React from 'react'
+import { Routes, Route } from 'react-router'
+import './App.css'
 
-import 'antd/dist/antd.css';
-import 'antd/dist/antd.js';
-import 'antd/dist/antd.min.css'
+import { Canvas } from '@react-three/fiber'
+import { useGLTF, Stage, PresentationControls } from '@react-three/drei'
 
-import 'antd/dist/antd.variable.min.css';
-
-import { Routes, Route } from "react-router-dom";
-
-import { lazy } from 'react';
-import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
-
-
-
-const Navbar = lazy(() => import('./Components/Navbar/Navbar'))
-
-const HomePage = lazy(() => import('./Pages/HomePage/HomePage'))
-
+import Navbar from './Components/Navbar/Navbar'
+import HomePage from './Pages/HomePage/HomePage'
+/* 
+const Model = (props) => {
+  const { scene } = useGLTF("/bmw.glb")
+  return <primitive object={scene} {...props} />
+}
+ */
 
 function App() {
 
-  const [showBtn, setShowBtn] = useState(false)
-
-  useEffect(() => {
-
-    window.onscroll = () => {
-      if (window.scrollY > 400) {
-        setShowBtn(true)
-      } else {
-        setShowBtn(false)
-      }
-    }
-  }, [])
-
-
-  const back_Top = () => {
-    window.scrollTo({
-      top: '0',
-      behavior: 'smooth'
-    })
-  }
-
   return (
+
     <div className='App'>
       <div className='container_fl'>
         <Navbar />
@@ -51,9 +26,6 @@ function App() {
             <Route path='/' element={<HomePage />} />
           </Routes>
         </div>
-        {
-          showBtn && <div className='back_top' onClick={back_Top}><ArrowCircleUpIcon /> </div>
-        }
       </div>
     </div>
   )

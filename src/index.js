@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.css';
-
+/* 
 import { Suspense } from 'react';
 
 import { ThreeDots } from 'react-loader-spinner'
-
+ */
 import { BrowserRouter } from 'react-router-dom'
 
 /* 
@@ -33,7 +33,7 @@ i18n.use(initReactI18next).use(LanguageDetector).use(HttpApi).init({
 });
  */
 
-
+/* 
 const Loading = () => {
   return (
     <>
@@ -51,16 +51,13 @@ const Loading = () => {
       </div>
     </>
   )
-}
+} */
 
 const root = ReactDOM.createRoot(document.getElementById('__react'));
 root.render(
-
-  <Suspense fallback={<Loading />}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </Suspense>
 
 );
 
